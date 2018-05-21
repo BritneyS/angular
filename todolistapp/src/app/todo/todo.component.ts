@@ -33,6 +33,11 @@ export class TodoComponent implements OnInit {
   onAdd(itemTitle) {
     this.toDoService.addTitle(itemTitle.value);
     itemTitle.value = null; //TODO: add condition to check for inserting of null values
+    //TODO: add check for script and SQL injections
+  }
+
+  alterCheck($key: string,isChecked) {
+    this.toDoService.checkOrUnCheckTitle($key,!isChecked);
   }
 
 }
