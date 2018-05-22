@@ -40,3 +40,4 @@ Thumbs.db
 
 # other
 /environment.ts
+/environment.prod.ts
