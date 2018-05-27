@@ -5,7 +5,7 @@ import { TodoService } from './shared/todo.service';
   selector: 'app-todo',
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css'],
-  providers : [TodoService]
+  providers : [ TodoService ]
 })
 export class TodoComponent implements OnInit {
   toDoListArray: any[];
